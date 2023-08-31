@@ -1,0 +1,63 @@
+local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
+local window = DrRayLibrary:Load("Cathub v1 [mm2]", "Default")
+local tab = DrRayLibrary.newTab("Main", "ImageIdHere")
+tab.newButton("get tptool", "Teleport when click!", function()
+          		mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = "Click me and tp"
+tool.Activated:connect(function()
+local pos = mouse.Hit+Vector3.new(0,2.5,0)
+pos = CFrame.new(pos.X,pos.Y,pos.Z)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+end)
+tool.Parent = game.Players.LocalPlayer.Backpack
+end)
+tab.newButton("fly ", "omg im so lazy to type!", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/GDvMG4Ve'))()
+end)
+tab.newButton("Teleport VIEW MORE", "omg im so lazy to type!", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/eUwg0n1f"))()
+end)
+
+local tab = DrRayLibrary.newTab("Other", "ImageIdHere")
+tab.newButton("inf jump", "Prints Hello!", function()
+    local InfiniteJumpEnabled = true
+game:GetService("UserInputService").JumpRequest:connect(function()
+if InfiniteJumpEnabled then
+game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+end
+end)
+end)
+tab.newButton("be fast", "Prints Hello!", function()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 31
+end)
+tab.newButton("Noclip", "Prints Hello!", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/CWh9ZrLN'))()
+end)
+tab.newButton("Change fov", "Prints Hello!", function()
+    game:GetService("Workspace").CurrentCamera.FieldOfView = 120
+end)
+
+tab.newButton("Change fov back", "Prints Hello!", function()
+game:GetService("Workspace").CurrentCamera.FieldOfView = 80
+end)
+tab.newButton("fix lag", "Prints Hello!", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/zJztwUg1"))()
+end)
+local tab = DrRayLibrary.newTab("Trolling", "ImageIdHere")
+tab.newButton("Get all knife", "Prints Hello!", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/BA40MZNT'))()
+end)
+local tab = DrRayLibrary.newTab("autofarm", "ImageIdHere")
+tab.newButton("Coin autofarm", "invisible doesn't work!", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/xqzqxUYq"))()
+end)
+tab.newButton("beach ball autofarm", "invisible doesn't work!", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0mm"))()
+end)
+
+local tab = DrRayLibrary.newTab("Esps", "ImageIdHere")
+tab.newButton("Murder esp", "omg im so lazy to type!", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/ezmGqh6i'))()
+end)
